@@ -1,4 +1,4 @@
-# dn-unlimited extension
+# dn-unlimited - Chrome extension
 dn.se utan reklam och obegränsat med fria artiklar
 
 
