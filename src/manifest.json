@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "DN Free",
+	"name": "DN unlimited",
 	"version": "0.1",
-	"description": "Unlimited number of free articles on dn.se. Removes all ads.",
+	"description": "dn.se with no ads and unlimited number of articles",
 	"homepage_url": "https://github.com/crash007/dn-free",
 	"author": "crash007",
 	 "content_scripts": [
