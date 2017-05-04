@@ -1,10 +1,10 @@
-# svd-free Chrome addon
-Obegränsat med fria artiklar på dn.se
-Tar bort reklam på dn.se
+# dn-unlimited - Chrome extension
+dn.se utan reklam och obegränsat med fria artiklar
 
-# Installera
-1. Ladda ner dn-free.crx
+
+# Installera manuellt
+1. Ladda ner dn-unlimited.crx
 2. Gå till tillägg in Chrome.
 3. Kryssa i programmerarläge.
 4. Klicka på "Hämta okomprimerat tillägg".
-5. Väl mappen med dn-free.crx
+5. Väl mappen med dn-unlimited.crx
