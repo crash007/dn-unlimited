@@ -1,6 +1,7 @@
 {
 	"manifest_version": 2,
-	"name": "DN unlimited",
+	"name": "DN clean and free",
+	"short_name": "DN clean",
 	"version": "0.1",
 	"description": "dn.se with no ads and unlimited number of articles",
 	"homepage_url": "https://github.com/crash007/dn-free",
