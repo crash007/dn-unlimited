@@ -1,27 +1,31 @@
-jQuery(document).ready(function(){
-	
-	$('.js-paywall').remove();
-	$('.ad.ad').remove();
-	$('.sponsored-teaser').remove();
+jQuery(document).ready(function () {
 
-	MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+    $('.js-paywall').remove();
+    $('.ad.ad').remove();
+    $('.sponsored-teaser').remove();
 
-	var observer = new MutationObserver(function(mutations, observer) {
-		// fired when a mutation occurs
-		var classname = mutations[0].target.className;
+    MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
-		if(classname.includes("js-ad")){
-			console.log("removing ads.");
-			$('.ad.ad').remove();
-			$('.sponsored-teaser').remove();
-		}
-		
-	});
+    var observer = new MutationObserver(function (mutations, observer) {
+        // fired when a mutation occurs
+        $(mutations).each(function (i) {
 
-	
-	observer.observe(document, {
-	  subtree: true,
-	  childList: true  
-	});
+            if (this.target.className == "pwOverlayContent") {
+                console.log("Removing ad-blocker popup dialog.")
+                $('#pwOverlay').remove();
+            }
+
+            if (this.target.className.includes("js-ad")) {
+                console.log("removing ads.");
+                $('.ad.ad').remove();
+                $('.sponsored-teaser').remove();
+            }
+        });
+    });
+
+    observer.observe(document, {
+        subtree: true,
+        childList: true
+    });
 
 });
