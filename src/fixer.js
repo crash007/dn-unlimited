@@ -1,6 +1,6 @@
 jQuery(document).ready(function () {
 
-    $('.js-paywall').remove();
+    $('.paywall').remove();
     $('.ad.ad').remove();
     $('.sponsored-teaser').remove();
 
